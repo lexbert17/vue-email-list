@@ -8,6 +8,11 @@
 </head>
 <body>
     <div id="app">
+        <button @click="generateEmail">Genera email random</button>
+
+        <ul v-for="email in randomEmail">
+            <li>{{email}}</li>
+        </ul>
         
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
